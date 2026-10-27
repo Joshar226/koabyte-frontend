@@ -1,0 +1,41 @@
+/* SECCIONES */
+
+.C_titulo-seccion {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .C_titulo-seccion {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .C_titulo-seccion {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+}
+
+.slide-track {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  animation: scroll 30s linear infinite;
+  -webkit-animation: scroll 30s linear infinite;
+  width: calc(200px * 18);
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-200px * 9));
+    transform: translateX(calc(-200px * 9));
+  } 
+}
