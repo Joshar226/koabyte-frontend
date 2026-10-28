@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
-html {
-    font-family: "Bai Jamjuree", sans-serif;
+@theme {
+  --color-primary: #0E1A2B;
+  --color-secondary: #2BD58A;
+  --color-orange: #FF8A3D;
+  --color-light-background: #F6F8FB;
+}
+
+h1, h2 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p, a {
+  font-family: "Inter", sans-serif;
 }
